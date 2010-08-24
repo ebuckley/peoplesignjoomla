@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>System - Peoplesign photo captcha</name>
+	<author>Ersin Buckley</author>
+	<creationDate>August 2010</creationDate>
+	<copyright>(C) 2010 - Myricomp LLC</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>ersin@peoplesign.com</authorEmail>
+	<authorUrl>http://peoplesign.com</authorUrl>
+	<version>1.7.0</version>
+	<description>
+	<![CDATA[
+	Easily add a Peoplesign captcha to the following Joomla forms: contact us, registration and more.
+	<span style="color:#900; font-weight:bold; font-size:larger">
+	You must enable this plugin from <a href="index.php?option=com_plugins&filter_type=system">Extensions-&gt;Plugin Manager</a></span>
+]]>
+	
+	</description>
+	<files>
+		<filename plugin="peoplesign">peoplesign.php</filename>
+		<filename plugin="peoplesign">peoplesign/peoplesignClient.php</filename>
+		<filename plguin="peoplesign">peoplesign/plugin/location_Com_Contact.php</filename>
+		<filename plguin="peoplesign">peoplesign/plugin/location_Login.php</filename>
+		<filename plguin="peoplesign">peoplesign/plugin/location_Register.php</filename>
+		<filename plguin="peoplesign">peoplesign/plugin/location_Reset.php</filename>
+		<filename plguin="peoplesign">peoplesign/plugin/location_Remind.php</filename>
+		<filename plguin="peoplesign">peoplesign/plugin/location_Kunena.php</filename>
+	</files>
+	
+
+       <params >
+	        <param type="spacer" default=" " label="" description="x" />
+	        	
+		<param name="peoplesignKey" type="text" size="25" default="b17ddea2d6920eb24bf23ad6125326d3" label="&lt;u&gt;Registration Key&lt;/u&gt; &lt;br&gt;(Get a new key &lt;a href='http://peoplesign.com/main/customize.html' target='_blank' &gt;here&lt;/a &gt;.  The default key will &lt;br&gt; eventually expire.)" description="Free support and extra features are available if your register and use your own key. " />
+                <param type="spacer" default=" "/>	
+		
+        
+		<param name="peoplesignConfigurationString"  type="text" size="25" default="" 
+		label="Customization String &lt;br&gt; (Get it &lt;a href='http://peoplesign.com/main/customize.html' target='_blank' &gt;here&lt;/a &gt;)"
+		description="Allows you to customize the appearance and security level of Peoplesign."/>
+
+                <param type="spacer" default=" "/>
+	
+                <param name="enableForCom_Contact" type="radio"  label="Add Peoplesign to &lt;u&gt;Contact Us &lt;/u&gt;form?" description="This may not work if you customized this form (via manual edit or template override)."  default="Yes">
+			<option value="Yes">Yes</option>
+			<option value="No">No</option>
+		</param>
+		
+		<param name="enableForLogin" type="radio"  label="Add Peoplesign to &lt;u&gt;Login&lt;/u&gt; form (on the component page)?" description="This may not work if you customized this form (via manual edit or template override)."  default="No">
+			<option value="Yes">Yes</option>
+			<option value="No">No</option>
+		</param>
+		
+		
+		<param name="enableForRegister" type="radio"  label="Add Peoplesign to the default &lt;u&gt;Registration&lt;/u&gt; form?" description="This may not work if you customized this form (via manual edit or template override)."  default="Yes">
+			<option value="Yes">Yes</option>
+			<option value="No">No</option>
+		</param>
+		
+		
+		<param name="enableForReset" type="radio"  label="Add Peoplesign to &lt;u&gt;Reset Password&lt;/u&gt; form?" description="This may not work if you customized this form (via manual edit or template override)."  default="Yes">
+			<option value="Yes">Yes</option>
+			<option value="No">No</option>
+		</param>
+		
+		<param name="enableForRemind" type="radio"  label="Add Peoplesign to &lt;u&gt;Remind Username&lt;/u&gt; form?" description="This may not work if you customized this form (via manual edit or template override)."  default="Yes">
+			<option value="Yes">Yes</option>
+			<option value="No">No</option>
+		</param>
+		 <param type="spacer" default=" "/>
+		 		<param name="enableForKunena" type="radio"  label="Add Peoplesign to &lt;u&gt;Kunena&lt;/u&gt; anonymous forms" description="This may not work if you customized this form (via manual edit or template override)."  default="No">
+		</param>
+		
+        </params> 
+</install>
